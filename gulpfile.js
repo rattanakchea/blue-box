@@ -9,7 +9,7 @@
   
 
     var APP = {
-    	scss: ['app/scss/**/*.scss', 'app/scss/*.scss'],
+    	scss: ['app/scss/**/*.*css', 'app/scss/*.*css'],
         css: 'app/css'
     };
 
@@ -38,7 +38,7 @@
     });
 
     gulp.task('webserver', function() {
-      gulp.src('app/')
+      gulp.src('/app')
         .pipe(server({
           livereload: true,
           open: true
