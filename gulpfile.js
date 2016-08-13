@@ -9,14 +9,9 @@
   
 
     var APP = {
-    	scss: ['app/scss/**/*.*css', 'app/scss/*.*css'],
+    	scss: ['app/scss/**/*.scss', 'app/scss/*.scss'],
         css: 'app/css'
     };
-
-    var DIST = {
-    	css: 'dist/css'
-    };
-
 
     //scss() is function covert from scss to css
     //dependend: sass lib
@@ -30,7 +25,7 @@
 
     //watch all file changes
     gulp.task('watch', function(){
-      gulp.watch(APP.styles, ['scss']); 
+      gulp.watch(APP.scss, ['scss']);
       
       //other watchers
     });
