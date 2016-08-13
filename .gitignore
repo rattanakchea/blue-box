@@ -5,3 +5,5 @@ node_modules
 bower_components
 dist
 .idea
+.gulp-scss-cache/
+app/libs

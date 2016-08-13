@@ -27,8 +27,6 @@
         .pipe(gulp.dest(APP.css));
     });
 
-   
-
 
     //watch all file changes
     gulp.task('watch', function(){
@@ -38,7 +36,7 @@
     });
 
     gulp.task('webserver', function() {
-      gulp.src('/app')
+      gulp.src('app/')
         .pipe(server({
           livereload: true,
           open: true
