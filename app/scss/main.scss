@@ -1,5 +1,9 @@
-@import 'todos';
+
 
 body {
   background-color: white;
+
+  .content {
+    min-height: 600px;
+  }
 }
