@@ -6,8 +6,6 @@ app.ItemView = Backbone.View.extend({
     //id: 'item-view',
     el: $('#item-view'),
 
-    template: _.template('<div><%= title %> - <%= description %></div>'),
-
     initialize: function(){
         this.render();
     },
